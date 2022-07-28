@@ -1,4 +1,4 @@
-.list{
+.list {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -10,38 +10,38 @@
     color: #1D3130;
     gap: 60px;
     list-style: none;
-
-
 }
 
-.list a{
+.list a {
     text-decoration: none;
     color: #1D3130;
 }
 
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 200px;
 
 }
-.list select{
+
+.list select {
     border: none;
     outline: none;
 }
 
-.phone, .vector{
+.phone, .vector {
     display: flex;
     align-items: center;
 
 }
 
-.phone img, .vector img{
+.phone img, .vector img {
     margin-right: 8px;
 }
-.vector span{
+
+.vector span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;

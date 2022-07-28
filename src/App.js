@@ -1,16 +1,15 @@
 import React from 'react';
 import Header from "./components/Header/Header";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import FirstPage from "./pages/MainPage/FirstPage/FirstPage";
+
 
 const App = () => {
   return (
      <>
         <Header/>
-        <BrowserRouter>
-           <Routes>
+        <FirstPage/>
 
-           </Routes>
-        </BrowserRouter>
+
      </>
 
   );
