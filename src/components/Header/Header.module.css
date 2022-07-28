@@ -1,0 +1,53 @@
+.list{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1D3130;
+    gap: 60px;
+    list-style: none;
+
+
+}
+
+.list a{
+    text-decoration: none;
+    color: #1D3130;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 200px;
+
+}
+.list select{
+    border: none;
+    outline: none;
+}
+
+.phone, .vector{
+    display: flex;
+    align-items: center;
+
+}
+
+.phone img, .vector img{
+    margin-right: 8px;
+}
+.vector span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FF583E;
+}
