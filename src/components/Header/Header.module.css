@@ -47,7 +47,7 @@ li:last-child {
     width: 0;
     height: 3%;
     background-color: black;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
     right: 0;
 }
 
@@ -59,20 +59,20 @@ li:last-child {
     background-color: black;
     bottom: 0;
     left: 0;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
 }
 
-.headerItem:focus:before {
-    width: 100%;
-}
+/*.headerItem:focus:before {*/
+/*    width: 100%;*/
+/*}*/
 
-.headerItem:focus:after {
-    width: 100%;
-}
+/*.headerItem:focus:after {*/
+/*    width: 100%;*/
+/*}*/
 
 .headerItem:focus {
     color: red;
-    opacity: .75;
+    /*opacity: .75;*/
 }
 
 .headerItemTel {
