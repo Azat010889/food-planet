@@ -1,0 +1,108 @@
+.secondPageContainer {
+    margin-bottom: 150px;
+}
+
+.secondPageMid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.secondPageMidRightMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondPageMidRight {
+    margin-right: 250px;
+}
+
+.secondPageMidRightMenuItem {
+    margin-right: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D3130;
+}
+
+.secondPageMidLeft {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #254F4C;
+}
+
+
+.secondPageMidBottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondPageMidBottomLeft {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1D3130;
+    margin-right: 25px;
+}
+
+.secondPageMidBottomChoice {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3A403F;
+    margin-right: 0;
+    padding: 12px 39px 12px 23px;
+}
+
+.secondPageMidRightMenuItem {
+    position: relative;
+}
+
+.secondPageMidRightMenuItem:focus {
+    color: red;
+}
+
+.secondPageMidRightMenuItem::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3%;
+    background-color: black;
+    transition: 0.3s;
+    right: 0;
+}
+
+.secondPageMidRightMenuItem::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.secondPageMidRightMenuItem:focus:before {
+    width: 100%;
+}
+
+.secondPageMidRightMenuItem:focus:after {
+    width: 100%;
+}
+

@@ -1,32 +1,42 @@
-import React from 'react';
-import logo from "../../media/logo/LOgo.svg"
-import phone from "../../media/logo/phone 1.svg"
-import vector from "../../media/logo/Vector.svg"
-import style from "./Header.module.css"
+import React, {useState} from 'react';
+import {NavLink} from "react-router-dom";
+import styles from "./Header.module.css";
+import headerLogo from "../../media/images/headerLogo.png"
+import bundle from "../../media/logo/bundle.svg"
+import tel from "../../media/logo/tel.svg"
 
 const Header = () => {
+    const [isActive, setIsActive] = useState(false);
+
+    window.onscroll = () => {
+        if (window.pageYOffset > 50) {
+            setIsActive(true);
+        } else {
+            setIsActive(false);
+        }
+    }
+    console.log(isActive);
+
     return (
-        <div className={style.header}>
-                <div className="">
-                    <img src={logo} alt=""/></div>
-                <ul className={style.list}>
-                    <li><a href="#">Главная</a></li>
-                    <li>
-                        <select name="" id="">
-                            <option value=""><a href="#">Меню</a></option>
-                            <option value=""><a href="#">Напитки</a></option>
-                            <option value=""><a href="#">Пицца</a></option>
-                        </select></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
+        <div className={isActive ? styles.headerActive : ""} id="headerContent">
+            <div className={styles.headerWrapper}>
+                <div className={styles.headerLogo} id="headerLogo">
+                    <img src={headerLogo} alt="headerLogo"/>
+                </div>
+                <ul className={styles.headerMenu}>
+                    <li><NavLink to="/" className={styles.headerItem}>Главная</NavLink></li>
+                    <li><NavLink to="/menu" className={styles.headerItem}>Меню</NavLink></li>
+                    <li><NavLink to="/order" className={styles.headerItem}>Доставка</NavLink></li>
+                    <li><NavLink to="/contacts" className={styles.headerItem}>Контакты</NavLink></li>
+                    <li className={styles.headerItemTel}>
+                        <img src={tel} alt="" className={styles.headerTel}/>
+                        +996500405988
+                    </li>
+                    <li className={styles.headerItemBundle}>
+                        <img src={bundle} alt="bundle" className={styles.bundleOne}/>
+                        1
+                    </li>
                 </ul>
-            <div className={style.phone}>
-                <img src={phone} alt=""/>
-                <span>+996500405988</span>
-            </div>
-            <div className={style.vector}>
-                <img src={vector} alt=""/>
-                <span>1</span>
             </div>
         </div>
     );

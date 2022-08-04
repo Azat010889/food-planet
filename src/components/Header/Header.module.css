@@ -1,53 +1,114 @@
-.list {
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerMenu li, select {
+    margin-right: 60px;
+    list-style: none;
+}
+
+/*select{*/
+/*  appearance: none;*/
+/*}*/
+
+li:last-child {
+    margin-right: 0;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.headerItem {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #1D3130;
-    gap: 60px;
-    list-style: none;
+    position: relative;
 }
 
-.list a {
-    text-decoration: none;
+.headerItem::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3%;
+    background-color: black;
+    transition: 0.3s;
+    right: 0;
+}
+
+.headerItem::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.headerItem:focus:before {
+    width: 100%;
+}
+
+.headerItem:focus:after {
+    width: 100%;
+}
+
+.headerItem:focus {
+    color: red;
+    opacity: .75;
+}
+
+.headerItemTel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
     color: #1D3130;
 }
 
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 200px;
-
-}
-
-.list select {
-    border: none;
-    outline: none;
-}
-
-.phone, .vector {
-    display: flex;
-    align-items: center;
-
-}
-
-.phone img, .vector img {
-    margin-right: 8px;
-}
-
-.vector span {
+.headerItemBundle {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    display: flex;
-    align-items: center;
     color: #FF583E;
+}
+
+.bundleOne {
+    margin-right: 10px;
+}
+
+.headerTel {
+    margin-right: 10px;
+}
+
+.headerActive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    padding: 20px 90px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }

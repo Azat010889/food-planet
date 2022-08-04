@@ -1,0 +1,77 @@
+.secondPageContainer {
+    margin-bottom: 100px;
+}
+
+.secondPageTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondPageTopRightMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondPageTopRight {
+    margin-right: 250px;
+}
+
+.secondPageTopRightMenuItem {
+    margin-right: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D3130;
+}
+
+.secondPageTopLeft {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #254F4C;
+}
+
+.secondPageTopRightMenuItem {
+    position: relative;
+}
+
+.secondPageTopRightMenuItem:focus {
+    color: red;
+}
+
+.secondPageTopRightMenuItem::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3%;
+    background-color: black;
+    transition: 0.3s;
+    right: 0;
+}
+
+.secondPageTopRightMenuItem::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.secondPageTopRightMenuItem:focus:before {
+    width: 100%;
+}
+
+.secondPageTopRightMenuItem:focus:after {
+    width: 100%;
+}
