@@ -15,10 +15,7 @@ const NotFound = () => {
                     404
                 </div>
                 <div className={styles.errorSubTitle}>
-                    Страница не найдена
-                </div>
-                <div className={styles.errorDescription}>
-                    Ой! Страница, которую вы ищете, не существует. Возможно, он был перемещен или удален.
+                    ОШИБКА: Страница не найдена
                 </div>
                 <div className={styles.errorButton}>
                     <Link to="*" className={styles.errorBtn} onClick={returnToMainPage}>Вернуться на главную</Link>

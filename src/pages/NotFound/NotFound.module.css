@@ -1,5 +1,5 @@
 .errorPage {
-    background: #F4E4D5;
+    background: red;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -7,13 +7,12 @@
 }
 
 .errorTitle {
-    font-family: 'Inter';
     padding-top: 100px;
     font-style: normal;
     font-weight: 300;
     font-size: 200px;
     line-height: 242px;
-    color: #FA7C70;
+    color: #FFF;
     text-align: center;
 }
 
@@ -23,20 +22,12 @@
     font-weight: 800;
     font-size: 42px;
     line-height: 52px;
-    color: #201F1F;
+    color: #FFF;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.errorDescription {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 19px;
-    color: #201F1F;
-    margin-bottom: 100px;
-}
+
 
 .errorBtn {
     font-family: 'Inter';
@@ -45,9 +36,8 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #201F1F;
-    border: 1px solid #FA7C70;
-    background: white;
+    color: #FFF;
+    background: black;
     padding: 10px 30px;
     border-radius: 50px;
 }
