@@ -79,7 +79,6 @@
 
 .secondPageMidRightMenuItem::before {
     position: absolute;
-    content: "";
     width: 0;
     height: 3%;
     background-color: black;
@@ -89,7 +88,6 @@
 
 .secondPageMidRightMenuItem::after {
     position: absolute;
-    content: "";
     width: 0%;
     height: 3%;
     background-color: black;

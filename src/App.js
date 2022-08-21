@@ -6,7 +6,9 @@ import Main from "./pages/MainPage/Main";
 import Footer from "./components/Footer/Footer";
 import MainMenu from "./pages/MainPage/components/MainMenu/MainMenu";
 import MainOrder from "./pages/MainPage/components/MainOrder/MainOrder";
+import Cart from "./pages/MainPage/components/Cart/Cart";
 import NotFound from "./pages/NotFound/NotFound";
+
 
 function App() {
     return (
@@ -20,6 +22,7 @@ function App() {
                             <Route path="/menu" element={<MainMenu/>}/>
                             <Route path="/order" element={<MainOrder/>}/>
                             <Route path="/contacts" element={<Main/>}/>
+                            <Route path="/cart" element={<Cart/>}/>
                             <Route path="*" element={<NotFound/>}/>
                         </Routes>
                         <Main/>

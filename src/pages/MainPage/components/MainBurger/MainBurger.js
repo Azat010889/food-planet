@@ -16,7 +16,7 @@ const MainBurger = () => {
                     {item.description}
                 </div>
                 <div className={styles.secondPageBurgerPrice}>
-                    {item.price}
+                    {item.price} {item.currency}
                 </div>
                 <div className={styles.secondPageBurgerButton}>
                     <button className={styles.secondPageBurgerBtnMinus}>

@@ -13,14 +13,11 @@
     flex-wrap: wrap;
 }
 
-.headerMenu li, select {
+.headerMenu li {
     margin-right: 60px;
     list-style: none;
 }
 
-/*select{*/
-/*  appearance: none;*/
-/*}*/
 
 li:last-child {
     margin-right: 0;
@@ -47,7 +44,6 @@ li:last-child {
     width: 0;
     height: 3%;
     background-color: black;
-    /*transition: 0.3s;*/
     right: 0;
 }
 
@@ -59,20 +55,12 @@ li:last-child {
     background-color: black;
     bottom: 0;
     left: 0;
-    /*transition: 0.3s;*/
 }
 
-/*.headerItem:focus:before {*/
-/*    width: 100%;*/
-/*}*/
-
-/*.headerItem:focus:after {*/
-/*    width: 100%;*/
-/*}*/
 
 .headerItem:focus {
     color: red;
-    /*opacity: .75;*/
+
 }
 
 .headerItemTel {
@@ -112,3 +100,38 @@ li:last-child {
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
+
+.shopCartButton{
+    float: left;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+    border: 0;
+    background-color: white;
+}
+
+
+.shopCartButton:hover,
+.shopCartButton.active{
+    color: red;
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

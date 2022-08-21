@@ -16,7 +16,7 @@ const MainPizza = () => {
                     {item.description}
                 </div>
                 <div className={styles.secondPagePizzaPrice}>
-                    {item.price}
+                    {item.price} {item.currency}
                 </div>
                 <div className={styles.secondPagePizzaButton}>
                     <button className={styles.secondPagePizzaBtnMinus}>

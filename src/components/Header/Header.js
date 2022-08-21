@@ -6,19 +6,8 @@ import bundle from "../../media/logo/bundle.svg"
 import tel from "../../media/logo/tel.svg"
 
 const Header = () => {
-    const [isActive, setIsActive] = useState(false);
-
-    window.onscroll = () => {
-        if (window.pageYOffset > 50) {
-            setIsActive(true);
-        } else {
-            setIsActive(false);
-        }
-    }
-    console.log(isActive);
 
     return (
-        <div className={isActive ? styles.headerActive : ""} id="headerContent">
             <div className={styles.headerWrapper}>
                 <div className={styles.headerLogo} id="headerLogo">
                     <img src={headerLogo} alt="headerLogo"/>
@@ -33,12 +22,11 @@ const Header = () => {
                         +996500405988
                     </li>
                     <li className={styles.headerItemBundle}>
-                        <img src={bundle} alt="bundle" className={styles.bundleOne}/>
+                        <NavLink to="/cart" className={styles.shopCartButton}><img src={bundle} alt="bundle" className={styles.bundleOne}/></NavLink>
                         1
                     </li>
                 </ul>
             </div>
-        </div>
     );
 };
 

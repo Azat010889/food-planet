@@ -12,7 +12,7 @@ const MainReview = () => {
                 <div className={styles.fourthPageName}>
                     {item.name}
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_0_295)">
+                        <g clipPath="url(#clip0_0_295)">
                             <path d="M12.0526 9.42029L13.3158 13.3361L9.40001 12.0729L12.0526 9.42029Z" fill="#1D3130"/>
                             <path d="M4.75671 2.63339L10.9196 8.79626L8.24007 11.4758L2.07719 5.3129L4.75671 2.63339Z"
                                   fill="#1D3130"/>

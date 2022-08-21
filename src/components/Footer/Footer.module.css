@@ -85,7 +85,6 @@ li:last-child {
 
 .footerItem::before {
     position: absolute;
-    content: "";
     width: 0;
     height: 3%;
     background-color: #FFFFFF;
@@ -95,7 +94,6 @@ li:last-child {
 
 .footerItem::after {
     position: absolute;
-    content: "";
     width: 0%;
     height: 3%;
     background-color: #FFFFFF;
